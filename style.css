@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #e50914;
+    --dark-color: #000;
+    --light-gray: #aaaaaa;
+    --dark-gray: #353839;
+    --light-color: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 740px){
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://i.pinimg.com/originals/77/3f/d9/773fd9acf752ede0ff53fc860e739f18.jpg);
+    background-blend-mode: darken;
+}
+
+
+    .field-login {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        min-width: 400px;
+        padding: 50px;
+        background-color: rgb(0, 0, 0, 0.8);
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 739px){
+
+    body {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--dark-color);
+    }
+
+    .field-login {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        padding: 50px;
+        background-color: rgb(0, 0, 0, 0.8);
+        border-radius: 5px;
+    }
+}
+
+header img {
+    width: 13%;
+    margin-left: 40px;
+    margin-top: -180px;
+}
+
+#login-title {
+    font-size: 32px;
+    margin-bottom: 1.6rem;
+    font-weight: bold;
+    display: block;
+    float: left;
+    color: var(--light-color);
+}
+
+.text-fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-field {
+    background-color: var(--dark-gray);
+    border-radius: 5px;
+    color: var(--light-gray);
+    padding: 18px 20px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+.text-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    width: 100%;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 18px 16px;
+    cursor: pointer;
+}
+
+.help-remember {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+    font-size: 14px;
+    color: var(--light-gray);
+}
+
+.help-remember a {
+    color: var(--light-gray);
+}
+
+.help-remember a:hover {
+    text-decoration: underline;
+    color: var(--light-gray);
+}
